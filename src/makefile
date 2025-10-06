@@ -1,5 +1,5 @@
 CXX = gcc
-CFLAGS = 
+CFLAGS = -lpng 
 INCLUDES := $(shell find . -name '*.c')
 OBJ := $(patsubst %.c,%.o,$(INCLUDES))
 TEST := *.md
