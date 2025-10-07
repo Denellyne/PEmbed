@@ -11,6 +11,7 @@ all: run
 cr : clean run
 
 build: $(OBJ)
+	@mkdir -p ../bin
 	@echo "Linking..."
 	$(CXX) $(CFLAGS) $(OBJ) -o $(OUT) 
 	
@@ -21,6 +22,7 @@ build: $(OBJ)
 	@echo "Compiled:" $@
 
 run: $(OBJ)
+	@mkdir -p ../bin
 	@echo "Linking..."
 	$(CXX) $(CFLAGS) $(OBJ) -o $(OUT) 
 	@$(OUT)
